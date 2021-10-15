@@ -1,0 +1,116 @@
+@font-face {font-family: 'Daehan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Daehan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+html{background-color: white;}
+section, p, h2, footer,{font-family: 'Noto Sans KR', sans-serif; font-weight: 300; margin: 0;}
+p{font-family: 'Daehan'; font-size: 1.05em; font-weight: 600; line-height: 1.6em;}
+
+body,h1,h2,p,section,video{margin: 0;}
+body{overflow: hidden;}
+img{width: 100%;}
+
+#myVideo{
+   margin-top: 0.5%;
+}
+
+
+/* 책 넘김 버튼 */
+#arrow1{position: absolute; 
+   bottom: 5%; 
+   left: 2.5%; 
+   width: 2.6%;
+   transition: all 0.08s ease-out;
+   }
+
+#arrow1:hover{
+   transform: scale(1.1);
+   }
+#arrow1:active{
+   transform: scale(0.9);
+   }
+
+#arrow2{
+   position: absolute; 
+   bottom: 5%; 
+   right: 2.5%; 
+   width: 2.6%;
+   transition: all 0.08s ease-out;
+   }
+
+#arrow2:hover{
+   transform: scale(1.1);
+   }
+#arrow2:active{
+   transform: scale(0.9);
+   }
+
+
+/* 상단 메뉴 */
+.menu{
+   position: absolute; 
+   top: 4%; 
+   right: 0%; 
+   width: 3.7%; 
+   display: inline-block;
+   }
+
+/* 홈 버튼 */
+#homebutton{
+   transition: all 0.08s ease-out; 
+   position: absolute; 
+   right: 75%;
+   }
+#homebutton:active{
+   transform: scale(0.9);
+   }
+
+/* 텍스트 버튼 */
+#textbutton{
+   position: absolute; 
+   transition: all 0.08s ease-out; 
+   right: 195%; top: 0%;
+   }
+
+#textbutton:active{
+   transform: scale(0.9);
+   }
+
+.text-contents{
+   margin: 10%;
+   word-break:keep-all;
+   }
+
+
+.textbox1{
+   position: absolute; 
+   overflow: scroll;
+   overflow-x: hidden;
+   right: 3.5%; 
+   top: 13%; 
+   width: 280px; 
+   height: 343px;
+   background-color: white; 
+   box-shadow: 2px 3px 10px 0px lightgray; 
+   border-radius: 15px;
+   opacity: 0; 
+   transition-duration: 0.5s;
+}
+
+.textbox1.show{
+   opacity: .85; 
+   z-index: 100;
+   }
+
+.textbox1::-webkit-scrollbar{
+   width: 18px;
+   background-color: transparent;
+   border-radius: 15px;
+}
+.textbox1::-webkit-scrollbar-thumb{
+   background-color: lightgray;
+   border-radius: 15px;
+   border: 5px solid transparent;
+   background-clip: padding-box;
+}
